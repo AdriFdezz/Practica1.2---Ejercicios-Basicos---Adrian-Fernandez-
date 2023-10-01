@@ -1,3 +1,6 @@
+#Escribe un programa que le pida al usuario una temperatura en grados Celsius, 
+#la convierta a grados Fahrenheit e imprima por pantalla la temperatura convertida.
+
 def conversor_fahrenheit(celsius):
     fahrenheit = (celsius * 9/5) + 32
     return fahrenheit
