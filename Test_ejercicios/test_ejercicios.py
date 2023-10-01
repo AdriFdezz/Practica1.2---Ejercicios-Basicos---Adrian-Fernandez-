@@ -5,6 +5,7 @@ from Ejercicios_Python.ejercicio4 import conversor_fahrenheit
 from Ejercicios_Python.ejercicio5 import calcular_iva
 from Ejercicios_Python.ejercicio6 import calcular_iva_y_importe
 from Ejercicios_Python.ejercicio7 import suma
+from Ejercicios_Python.ejercicio8 import suma2
 
 def test_bienvenida():
     resultado = bienvenida("Adri")
@@ -38,3 +39,7 @@ def test_calculo_iva_y_importe():
 def test_suma():
     resultado = suma(1, 2, 3)
     assert resultado == 6
+
+def test_suma2():
+    resultado = suma2(2, 3)
+    assert resultado == 5
