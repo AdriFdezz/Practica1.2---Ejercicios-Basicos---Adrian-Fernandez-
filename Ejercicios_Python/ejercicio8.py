@@ -1,3 +1,5 @@
+#Escribir el programa del ejercicio 1.7 usando solamente dos variables diferentes.
+
 def suma2(numero1, numero2):
     sumar = numero1 + numero2
     return sumar
