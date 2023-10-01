@@ -1,7 +1,8 @@
 from Ejercicios_Python.ejercicio1 import bienvenida
 from Ejercicios_Python.ejercicio2 import importe_total
 from Ejercicios_Python.ejercicio3 import operaciones
-from Ejercicios_Python.ejercicio4 import Conversor_fahrenheit
+from Ejercicios_Python.ejercicio4 import conversor_fahrenheit
+from Ejercicios_Python.ejercicio5 import calcular_iva
 
 def test_bienvenida():
     resultado = bienvenida("Adri")
@@ -20,5 +21,9 @@ def test_operaciones():
     assert resultado == salida
 
 def test_conversor_fahrenheit():
-    resultado = Conversor_fahrenheit(30)
+    resultado = conversor_fahrenheit(30)
     assert resultado == 86
+
+def test_calculo_iva():
+    resultado = calcular_iva(10, 21)
+    assert resultado == 12.1
