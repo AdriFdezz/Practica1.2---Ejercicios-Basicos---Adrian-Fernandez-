@@ -6,6 +6,7 @@ from Ejercicios_Python.ejercicio5 import calcular_iva
 from Ejercicios_Python.ejercicio6 import calcular_iva_y_importe
 from Ejercicios_Python.ejercicio7 import suma
 from Ejercicios_Python.ejercicio8 import suma2
+from Ejercicios_Python.ejercicio9 import suma3
 
 def test_bienvenida():
     resultado = bienvenida("Adri")
@@ -43,3 +44,7 @@ def test_suma():
 def test_suma2():
     resultado = suma2(2, 3)
     assert resultado == 5
+
+def test_suma3():
+    resultado = suma3(5, 5)
+    assert resultado == 10
