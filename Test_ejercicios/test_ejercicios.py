@@ -11,6 +11,7 @@ from Ejercicios_Python.ejercicio10 import calcular_fraccion
 from Ejercicios_Python.ejercicio11 import calcular_suma_n
 from Ejercicios_Python.ejercicio12 import imc
 from Ejercicios_Python.ejercicio13 import division
+from Ejercicios_Python.ejercicio14 import calcular_peso
 
 def test_bienvenida():
     resultado = bienvenida("Adri")
@@ -68,3 +69,7 @@ def test_calculo_imc():
 def test_division():
     resultado = division(13, 2)
     assert resultado == (6, 1)
+
+def test_calcular_peso():
+    resultado = calcular_peso(5, 3)
+    assert resultado == 785
