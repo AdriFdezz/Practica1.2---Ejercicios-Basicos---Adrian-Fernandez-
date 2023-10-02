@@ -9,6 +9,7 @@ from Ejercicios_Python.ejercicio8 import suma2
 from Ejercicios_Python.ejercicio9 import suma3
 from Ejercicios_Python.ejercicio10 import calcular_fraccion
 from Ejercicios_Python.ejercicio11 import calcular_suma_n
+from Ejercicios_Python.ejercicio12 import imc
 
 def test_bienvenida():
     resultado = bienvenida("Adri")
@@ -58,3 +59,7 @@ def test_calcular_fraccion():
 def test_calcular_suma_n():
     resultado = calcular_suma_n(10)
     assert resultado == 55
+
+def test_calculo_imc():
+    resultado = imc(60, 1.6)
+    assert resultado == 23.0
