@@ -8,6 +8,7 @@ from Ejercicios_Python.ejercicio7 import suma
 from Ejercicios_Python.ejercicio8 import suma2
 from Ejercicios_Python.ejercicio9 import suma3
 from Ejercicios_Python.ejercicio10 import calcular_fraccion
+from Ejercicios_Python.ejercicio11 import calcular_suma_n
 
 def test_bienvenida():
     resultado = bienvenida("Adri")
@@ -53,3 +54,7 @@ def test_suma3():
 def test_calcular_fraccion():
     resultado = calcular_fraccion()
     assert resultado == 0.25
+
+def test_calcular_suma_n():
+    resultado = calcular_suma_n(10)
+    assert resultado == 55
