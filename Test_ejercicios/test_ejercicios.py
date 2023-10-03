@@ -13,6 +13,7 @@ from Ejercicios_Python.ejercicio12 import imc
 from Ejercicios_Python.ejercicio13 import division
 from Ejercicios_Python.ejercicio14 import calcular_peso
 from Ejercicios_Python.ejercicio15 import calcular_interes
+from Ejercicios_Python.ejercicio16 import calcular_descuento_barras
 
 def test_bienvenida():
     resultado = bienvenida("Adri")
@@ -82,3 +83,8 @@ def test_calcular_interes():
     assert round(ahorros[0], 2) == 1040.0
     assert round(ahorros[1], 2) == 1081.6
     assert round(ahorros[2], 2) == 1124.86
+
+def test_calcular_descuento_barras():
+    barras_no_frescas = 4
+    costo = calcular_descuento_barras(barras_no_frescas)
+    assert round(costo, 2) == 8.38
