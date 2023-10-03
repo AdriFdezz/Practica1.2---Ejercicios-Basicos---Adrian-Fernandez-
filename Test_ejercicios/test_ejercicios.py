@@ -14,6 +14,7 @@ from Ejercicios_Python.ejercicio13 import division
 from Ejercicios_Python.ejercicio14 import calcular_peso
 from Ejercicios_Python.ejercicio15 import calcular_interes
 from Ejercicios_Python.ejercicio16 import calcular_descuento_barras
+from Ejercicios_Python.ejercicio17 import imprimir_nombre
 
 def test_bienvenida():
     resultado = bienvenida("Adri")
@@ -88,3 +89,10 @@ def test_calcular_descuento_barras():
     barras_no_frescas = 4
     costo = calcular_descuento_barras(barras_no_frescas)
     assert round(costo, 2) == 8.38
+
+def test_imprimir_nombre():
+    nombre = "Adrian"
+    numero = 3
+    resultado = imprimir_nombre(nombre, numero)
+    salida = "Adrian\nAdrian\nAdrian\n"
+    assert resultado == salida
