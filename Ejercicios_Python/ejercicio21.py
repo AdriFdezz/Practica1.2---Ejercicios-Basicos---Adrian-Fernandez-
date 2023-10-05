@@ -9,5 +9,3 @@ if __name__ == "__main__":
     frase = input("Escribe una frase para invertirla: ")
     frase_invertida = invertir_frase(frase)
     print("Frase invertida: " + frase_invertida)
-
-
